@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Constela</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header-principal">
+      <div class="container header-principal__conteudo">
+        <img
+          src="constela-logo.png"
+          alt="Logo da Constela"
+          width="120"
+          height="40"
+        />
+
+        <input type="checkbox" id="menu-toggle" class="menu-toggle__input" />
+        <label
+          for="menu-toggle"
+          class="menu-toggle__label"
+          aria-label="Abrir menu"
+        >
+          <span></span><span></span><span></span>
+        </label>
+
+        <nav class="menu-nav" aria-label="Navegação principal">
+          <ul class="menu">
+            <li><a href="#trilha" class="menu__link">Trilha</a></li>
+            <li>
+              <a href="#por-que-constela" class="menu__link"
+                >Por que Constela</a
+              >
+            </li>
+            <li><a href="#depoimentos" class="menu__link">Depoimentos</a></li>
+            <li>
+              <a
+                href="#garantir-vaga"
+                class="menu__link menu__link--destaque"
+                >Garantir Vaga</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <section class="hero">
+          <p class="hero__etiqueta">Trilha de 6 semanas - HTML + CSS3</p>
+          <h1 class="hero__titulo">
+            Front-end de verdade, para quem está trocando de área agora.
+          </h1>
+          <p class="hero__texto">
+            Sem enrolação sobre "o que é a internet?". Você constrói páginas
+            reais, com formulários validados, layouts responsivos e componentes
+            acessíveis, enquanto aprende por que cada linha existe.
+          </p>
+          <div class="hero__botoes">
+            <a href="#garantir-vaga" class="btn btn--primary">Quero começar</a>
+            <a href="#trilha" class="btn btn--ghost">Ver a Trilha</a>
+          </div>
+          <div class="hero__numeros">
+            <div class="hero-numero">
+              <span class="hero-numero__valor">6</span>
+              <span class="hero-numero__rotulo">semanas</span>
+            </div>
+            <div class="hero-numero">
+              <span class="hero-numero__valor">12</span>
+              <span class="hero-numero__rotulo">Projetos Práticos</span>
+            </div>
+            <div class="hero-numero">
+              <span class="hero-numero__valor">0</span>
+              <span class="hero-numero__rotulo">Pré-requisitos</span>
+            </div>
+          </div>
+          <div class="constelacao" aria-hidden="true">
+            <span class="star s1"></span>
+            <span class="star s2"></span>
+            <span class="star s3"></span>
+            <span class="star s4"></span>
+            <span class="star s5"></span>
+            <span class="star s6"></span>
+
+            <span class="line l1"></span>
+            <span class="line l2"></span>
+            <span class="line l3"></span>
+            <span class="line l4"></span>
+            <span class="line l5"></span>
+          </div>
+        </section>
+      </div>
+
+      <section id="trilha" class="construcao">
+        <h2>O que você constrói em cada módulo</h2>
+        <span class="span-construcao"
+          >Seis semanas, seis projetos entregáveis.</span
+        >
+      </section>
+
+      <div>
+        <article class="modulos">
+          <span class="modulo__numero">01</span>
+          <h3 class="modulo__titulo">Semântica HTML5</h3>
+          <p class="modulo__texto">
+            Estrutura de página com
+            <span class="modulo__destaque"
+              >&lt;article&gt;, &lt;section&gt; e &lt;nav&gt;</span
+            >
+            - pensando em como leitores de tela e o Google leem sua página.
+          </p>
+        </article>
+        <article class="modulos">
+          <span class="modulo__numero">02</span>
+          <h3 class="modulo__titulo">Layout com Grid e Flexbox</h3>
+          <p class="modulo__texto">
+            Grades responsivas que se ajustam sozinhas, sem media query pra cada
+            tamanho de tela.
+          </p>
+        </article>
+        <article class="modulos">
+          <span class="modulo__numero">03</span>
+          <h3 class="modulo__titulo">Formulários que validam</h3>
+          <p class="modulo__texto">
+            Validação nativa do HTML, máscaras com
+            <span class="modulo__destaque">pattern</span> e componentes
+            customizados como o checkbox desta própria página.
+          </p>
+        </article>
+        <article class="modulos">
+          <span class="modulo__numero">04</span>
+          <h3 class="modulo__titulo">Sistemas de design com CSS</h3>
+          <p class="modulo__texto">
+            Variáveis CSS e nomenclatura BEM para um projeto que não vira
+            bagunça quando cresce.
+          </p>
+        </article>
+        <article class="modulos">
+          <span class="modulo__numero">05</span>
+          <h3 class="modulo__titulo">Responsividade Mobile-First</h3>
+          <p class="modulo__texto">
+            Você escreve para celular primeiro, depois expande, a mesma lógica
+            usada nesta própria página.
+          </p>
+        </article>
+        <article class="modulos">
+          <span class="modulo__numero">06</span>
+          <h3 class="modulo__titulo">Acessibilidade na prática</h3>
+          <p class="modulo__texto">
+            Foco visível, contraste adequado e respeito a
+            <span class="modulo__destaque">prefers-reduced-motion</span>
+          </p>
+        </article>
+      </div>
+
+      <section id="por-que-constela" class="publico">
+        <h2 class="publico__titulo">
+          Feita para quem já tem uma carreira, só não é essa.
+        </h2>
+        <p class="publico__texto">
+          A maioria dos cursos de front-end assume que você nunca tocou num
+          computador para trabalhar. A Constela assume o oposto: você já
+          organiza processos, lida com prazos e resolve problemas, falta só o
+          vocabulário técnico e a prática guiada.
+        </p>
+        <p class="publico__texto">
+          Cada módulo termina num projeto que vai direto para o seu portfólio,
+          com o código explicado linha a linha, não só entregue pronto.
+        </p>
+      </section>
+
+      <aside class="texto__box">
+        <h3 class="texto__principios">
+          "Não é sobre decorar sintaxe. É sobre entender por que aquela linha
+          está ali, e isso muda a forma como você resolve o próximo problema
+          sozinha."
+        </h3>
+        <span class="texto__ensino">- Princípio de ensino da Constela</span>
+      </aside>
+
+      <section id="depoimentos">
+        <h2 class="texto__troca-area">Quem trocou de área</h2>
+
+        <article class="caixa__trocou-area">
+          <h3 class="avaliacao__texto">
+            "Vim do marketing e travava em qualquer CSS. Hoje entendo o porquê
+            de cada propriedade, não só copio de um tutorial."
+          </h3>
+          <p class="avaliacao__autor">Renata A. - ex-Marketing</p>
+        </article>
+        <article class="caixa__trocou-area">
+          <h3 class="avaliacao__texto">
+            "O projeto da semana 3 (formulário validado) foi o que me deu
+            confiança para montar meu portfólio inteiro sozinho."
+          </h3>
+          <p class="avaliacao__autor">Diego M. - ex-Contabilista</p>
+        </article>
+        <article class="caixa__trocou-area">
+          <h3 class="avaliacao__texto">
+            "Gostei de entender a lógica por trás do mobile-first, não decorei
+            breakpoints, entendi o raciocínio."
+          </h3>
+          <p class="avaliacao__autor">Ana P. - ex-Pedagoga</p>
+        </article>
+      </section>
+
+      <section id="garantir-vaga" class="signup">
+        <div class="signup__card">
+          <h2>Garanta sua vaga na próxima turma</h2>
+          <p class="signup__subtitle">
+            Vagas limitadas para manter o acompanhamento próximo em cada
+            projeto.
+          </p>
+
+          <form class="signup-form" novalidate>
+            <fieldset class="signup-form__fieldset">
+              <legend class="sr-only">Dados de inscrição</legend>
+
+              <div class="signup-form__field">
+                <label for="nome">Nome completo</label>
+                <input
+                  type="text"
+                  id="nome"
+                  name="nome"
+                  required
+                  placeholder="Como podemos te chamar?"
+                />
+              </div>
+
+              <div class="signup-form__field">
+                <label for="email">E-mail</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="voce@exemplo.com"
+                />
+              </div>
+
+              <div class="signup-form__field">
+                <label for="area">Área atual</label>
+                <input
+                  type="text"
+                  id="area"
+                  name="area"
+                  placeholder="Ex: Marketing Digital, Contabilidade..."
+                />
+              </div>
+            </fieldset>
+
+            <label class="checkbox-personalizado">
+              <input type="checkbox" name="termos" required />
+              <span class="checkmark" aria-hidden="true"></span>
+              Aceito receber informações sobre a próxima turma
+            </label>
+
+            <button type="submit" class="btn btn--primary btn--block">
+              Quero minha vaga
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <p>Constela - projeto de portfólio feito com HTML5 e CSS3.</p>
+    </footer>
+  </body>
+</html>
