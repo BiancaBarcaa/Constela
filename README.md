@@ -4,7 +4,7 @@ Landing page de uma trilha fictícia de front-end para quem está trocando de á
 
 > Projeto de estudo. A Constela e as turmas citadas na página não existem. O layout foi desenvolvido a partir de uma referência visual, e todo o código foi escrito por mim.
 
-🔗 **Demo:** [adicione aqui o link do GitHub Pages]
+🔗 Demo: https://biancabarcaa.github.io/Constela/
 
 ## O que o projeto pratica
 
